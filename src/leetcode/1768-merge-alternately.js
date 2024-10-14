@@ -3,7 +3,7 @@
  * @param {string} word2
  * @returns {string}
  */
-const merge2Words = function(word1, word2) {
+const mergeAlternately = function(word1, word2) {
   let i = 0;
   let j = 0;
   let result = "";
@@ -20,4 +20,4 @@ const merge2Words = function(word1, word2) {
   return result;
 }
 
-export default merge2Words;
+export default mergeAlternately;
