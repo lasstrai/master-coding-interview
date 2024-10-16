@@ -32,7 +32,7 @@ const backspaceCompare = function(s, t) {
     if (i>= 0 && j >= 0 & s.charAt(i) !== t.charAt(j)) {
       return false;
     }
-    if ((i >=0 && t < 0) || (i < 0 && t >= 0)) {
+    if ((i >= 0 && j < 0) || (i < 0 && j >= 0)) {
       return false;
     } 
     i--;

@@ -6,7 +6,8 @@
 
 const canPlaceFlowers = function(flowerbed, n) {
   let prev, next;
-  for (let i = 0; i < flowerbed.length; i++) {
+  let i = 0;
+  while (i < flowerbed.length && n > 0) {
     if (flowerbed[i] === 0) {
       prev = i === 0 || flowerbed[i - 1] === 0;
       next = i === flowerbed.length - 1 || flowerbed[i + 1] === 0;
@@ -15,6 +16,7 @@ const canPlaceFlowers = function(flowerbed, n) {
         n--;
       }
     }
+    i++;
   }
   return n === 0;
 }
