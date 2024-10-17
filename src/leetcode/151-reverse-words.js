@@ -8,6 +8,11 @@ const reverseWords = function(s) {
   let result = "";
   let flag = false;
   let i = 0;
+  let j = s.length - 1;
+  while (s[i] === " " || s[j] === " ") {
+    if (s[i] === " ") i++;
+    if (s[j] === " ") j--;
+  }
   while (i < s.length) {
     if (s[i] !== " ") {
       word += s[i];
