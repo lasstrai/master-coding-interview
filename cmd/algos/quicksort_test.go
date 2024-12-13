@@ -1,6 +1,7 @@
 package leetcode
 
 import (
+	"fmt"
 	"reflect"
 	"testing"
 )
@@ -26,6 +27,8 @@ func TestQuickSort(t *testing.T) {
 			quicksort(&testCase.input, 0, len(testCase.input))
 			if !reflect.DeepEqual(testCase.input, testCase.output) {
 				t.Errorf("what I got %v, what I want %v", testCase.input, testCase.output)
+			} else {
+				fmt.Printf(":) %s test passed babyyy\n", testCase.name)
 			}
 		})
 	}
