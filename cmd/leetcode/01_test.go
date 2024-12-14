@@ -6,7 +6,7 @@ import (
 	"testing"
 )
 
-type TestCase struct {
+type TestCase01 struct {
 	name string
 	nums []int
 	target int
@@ -14,7 +14,7 @@ type TestCase struct {
 }
 
 func TestTwoSums(t *testing.T) {
-	tests := []TestCase{
+	tests := []TestCase01{
 		{"nums = [2, 7, 11, 15] | target = 9 | [0, 1]", []int{2, 7, 11, 15}, 9, []int{0, 1}},
 		{"nums = [3, 2, 4] | target = 6 | [1, 2]", []int{3, 2, 4}, 6, []int{1, 2}},
 		{"nums = [3, 3] | target = 6 | [0, 1]", []int{3, 3}, 6, []int{0, 1}},
@@ -32,6 +32,3 @@ func TestTwoSums(t *testing.T) {
 		})
 	}
 }
-
-// Input: nums = [3,3], target = 6
-// Output: [0,1]

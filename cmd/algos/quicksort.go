@@ -9,7 +9,7 @@ func quicksort(arr *[]int, low, high int) {
 }
 
 func partition(arr *[]int, low, high int) int {
-	prev := -1
+	prev := low - 1
 	pivot := (*arr)[high-1]
 	for current := 0; current < high; current++ {
 		if (*arr)[current] <= pivot {
